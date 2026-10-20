@@ -170,7 +170,7 @@ ok: leave
 `buf` の先頭から戻りアドレスまでの距離は次の通りです。
 
 ```math
-\underbrace{\mathtt{0x10}}_{buf \to rbp} + \underbrace{\mathtt{0x08}}_{saved\ rbp} = \mathtt{0x18} = 24\ \text{バイト}
+\underbrace{\mathtt{0x10}}_{buf \to rbp} + \underbrace{\mathtt{0x08}}_{saved\ rbp} = \mathtt{0x18} = 24\ \text{bytes}
 ```
 
 よって 32 バイトのペイロードは次の構成になります（`read` が最大 32 バイト読むのにちょうど収まります）。
